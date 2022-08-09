@@ -159,109 +159,109 @@ var sections = [{
   id: 'Emoji',
   emojis: [{
     defaultEmoji: '😄',
-    keywords: ''
+    keywords: 'laugh fun happy'
   }, {
     defaultEmoji: '😁',
-    keywords: ''
+    keywords: 'tooth fun laugh'
   }, {
     defaultEmoji: '😆',
-    keywords: ''
+    keywords: 'laugh fun happy lol'
   }, {
     defaultEmoji: '😅',
-    keywords: ''
+    keywords: 'shame shy'
   }, {
     defaultEmoji: '😂',
-    keywords: ''
+    keywords: 'lol laugh hahaha'
   }, {
     defaultEmoji: '🤣',
-    keywords: ''
+    keywords: 'lol laugh hahaha'
   }, {
     defaultEmoji: '😊',
-    keywords: ''
+    keywords: 'happy smile smiling '
   }, {
     defaultEmoji: '😇',
-    keywords: ''
+    keywords: 'angel watcher'
   }, {
     defaultEmoji: '🙂',
-    keywords: ''
+    keywords: 'smile'
   }, {
     defaultEmoji: '🙃',
-    keywords: ''
+    keywords: 'upside-down rotate'
   }, {
     defaultEmoji: '😉',
-    keywords: ''
+    keywords: 'winking'
   }, {
     defaultEmoji: '😌',
-    keywords: ''
+    keywords: 'relieved'
   }, {
     defaultEmoji: '😍',
-    keywords: ''
+    keywords: 'love heart eyes'
   }, {
     defaultEmoji: '🥰',
-    keywords: ''
+    keywords: 'love '
   }, {
     defaultEmoji: '😘',
-    keywords: ''
+    keywords: 'kiss puckered lips'
   }, {
     defaultEmoji: '😗',
-    keywords: ''
+    keywords: 'puckered lips'
   }, {
     defaultEmoji: '😙',
-    keywords: ''
+    keywords: 'puckered lips'
   }, {
     defaultEmoji: '😚',
-    keywords: ''
+    keywords: 'puckered lips'
   }, {
     defaultEmoji: '😋',
-    keywords: ''
+    keywords: 'yumy savouring'
   }, {
     defaultEmoji: '😛',
-    keywords: ''
+    keywords: 'stuck out tongue'
   }, {
     defaultEmoji: '😝',
-    keywords: ''
+    keywords: 'stuck out tongue'
   }, {
     defaultEmoji: '😜',
-    keywords: ''
+    keywords: 'stuck out tongue'
   }, {
     defaultEmoji: '🤪',
-    keywords: ''
+    keywords: 'stuck out tongue'
   }, {
     defaultEmoji: '🤨',
-    keywords: ''
+    keywords: 'angry raised eyebrow'
   }, {
     defaultEmoji: '🧐',
-    keywords: ''
+    keywords: 'thinking'
   }, {
     defaultEmoji: '🤓',
-    keywords: ''
+    keywords: 'nerd '
   }, {
     defaultEmoji: '😎',
-    keywords: ''
+    keywords: 'sunglasses'
   }, {
     defaultEmoji: '🤩',
-    keywords: ''
+    keywords: 'star eyes'
   }, {
     defaultEmoji: '🥳',
-    keywords: ''
+    keywords: 'party hat'
   }, {
     defaultEmoji: '😏',
-    keywords: ''
+    keywords: 'smiriking'
   }, {
     defaultEmoji: '😒',
-    keywords: ''
+    keywords: 'tried unamused'
   }, {
     defaultEmoji: '😞',
-    keywords: ''
+    keywords: 'disappointed'
   }, {
     defaultEmoji: '😔',
-    keywords: ''
+    keywords: 'pensive'
   }, {
     defaultEmoji: '😟',
-    keywords: ''
+    keywords: 'worried'
   }, {
     defaultEmoji: '😕',
-    keywords: ''
+    keywords: 'confused'
   }, {
     defaultEmoji: '😣',
     keywords: ''
@@ -270,46 +270,46 @@ var sections = [{
     keywords: ''
   }, {
     defaultEmoji: '😫',
-    keywords: ''
+    keywords: 'ah '
   }, {
     defaultEmoji: '😩',
-    keywords: ''
+    keywords: 'ah '
   }, {
     defaultEmoji: '🥺',
-    keywords: ''
+    keywords: 'pleading'
   }, {
     defaultEmoji: '😢',
-    keywords: ''
+    keywords: 'pleading'
   }, {
     defaultEmoji: '😭',
-    keywords: ''
+    keywords: 'cry'
   }, {
     defaultEmoji: '😤',
-    keywords: ''
+    keywords: 'angry'
   }, {
     defaultEmoji: '😠',
-    keywords: ''
+    keywords: 'angry'
   }, {
     defaultEmoji: '😡',
-    keywords: ''
+    keywords: 'angry'
   }, {
     defaultEmoji: '🤬',
-    keywords: ''
+    keywords: 'angry insults'
   }, {
     defaultEmoji: '🤯',
-    keywords: ''
+    keywords: 'shocked'
   }, {
     defaultEmoji: '😳',
-    keywords: ''
+    keywords: 'flushed'
   }, {
     defaultEmoji: '🥵',
-    keywords: ''
+    keywords: 'flushed'
   }, {
     defaultEmoji: '🥶',
-    keywords: ''
+    keywords: 'freezed frozen ice'
   }, {
     defaultEmoji: '😱',
-    keywords: ''
+    keywords: 'fear screaming'
   }, {
     defaultEmoji: '😨',
     keywords: ''
@@ -318,133 +318,133 @@ var sections = [{
     keywords: ''
   }, {
     defaultEmoji: '😥',
-    keywords: ''
+    keywords: 'cry'
   }, {
     defaultEmoji: '😓',
-    keywords: ''
+    keywords: 'shame'
   }, {
     defaultEmoji: '🤗',
-    keywords: ''
+    keywords: 'hug'
   }, {
     defaultEmoji: '🤔',
-    keywords: ''
+    keywords: 'think'
   }, {
     defaultEmoji: '🤭',
-    keywords: ''
+    keywords: 'laugh'
   }, {
     defaultEmoji: '🤫',
-    keywords: ''
+    keywords: 'shee'
   }, {
     defaultEmoji: '🤥',
-    keywords: ''
+    keywords: 'lying'
   }, {
     defaultEmoji: '😶',
-    keywords: ''
+    keywords: 'poker'
   }, {
     defaultEmoji: '😐',
-    keywords: ''
+    keywords: 'poker'
   }, {
     defaultEmoji: '😑',
-    keywords: ''
+    keywords: 'poker'
   }, {
     defaultEmoji: '😬',
-    keywords: ''
+    keywords: 'wtf worried'
   }, {
     defaultEmoji: '🙄',
-    keywords: ''
+    keywords: 'disbelief annoyance'
   }, {
     defaultEmoji: '😯',
-    keywords: ''
+    keywords: 'hushed'
   }, {
     defaultEmoji: '😧',
-    keywords: ''
+    keywords: 'anduished'
   }, {
     defaultEmoji: '😮',
-    keywords: ''
+    keywords: 'anduished'
   }, {
     defaultEmoji: '😲',
-    keywords: ''
+    keywords: 'anduished confused'
   }, {
     defaultEmoji: '🥱',
-    keywords: ''
+    keywords: 'yawning'
   }, {
     defaultEmoji: '😴',
-    keywords: ''
+    keywords: 'z z z sleeping'
   }, {
     defaultEmoji: '🤤',
-    keywords: ''
+    keywords: 'drooling'
   }, {
     defaultEmoji: '😪',
-    keywords: ''
+    keywords: 'sleepy'
   }, {
     defaultEmoji: '😵',
-    keywords: ''
+    keywords: 'dizzy'
   }, {
     defaultEmoji: '🤐',
-    keywords: ''
+    keywords: 'zipper mouth'
   }, {
     defaultEmoji: '🥴',
-    keywords: ''
+    keywords: 'woozy'
   }, {
     defaultEmoji: '🤢',
-    keywords: ''
+    keywords: 'nauseated'
   }, {
     defaultEmoji: '🤮',
-    keywords: ''
+    keywords: 'vomiting'
   }, {
     defaultEmoji: '🤧',
-    keywords: ''
+    keywords: 'sneezing'
   }, {
     defaultEmoji: '😷',
-    keywords: ''
+    keywords: 'mask'
   }, {
     defaultEmoji: '🤒',
-    keywords: ''
+    keywords: 'thermometer'
   }, {
     defaultEmoji: '🤕',
-    keywords: ''
+    keywords: 'head bandage'
   }, {
     defaultEmoji: '🤑',
-    keywords: ''
+    keywords: 'money'
   }, {
     defaultEmoji: '🤠',
-    keywords: ''
+    keywords: 'cowboy texas mexico'
   }, {
     defaultEmoji: '😈',
-    keywords: ''
+    keywords: 'devil evil'
   }, {
     defaultEmoji: '👹',
-    keywords: ''
+    keywords: 'devil evil horns'
   }, {
     defaultEmoji: '👺',
-    keywords: ''
+    keywords: 'devil evil'
   }, {
     defaultEmoji: '🤡',
-    keywords: ''
+    keywords: 'clown'
   }, {
     defaultEmoji: '💩',
-    keywords: ''
+    keywords: 'poo'
   }, {
     defaultEmoji: '👻',
-    keywords: ''
+    keywords: 'guest'
   }, {
     defaultEmoji: '💀',
-    keywords: ''
+    keywords: 'skull'
   }, {
     defaultEmoji: '☠️',
-    keywords: ''
+    keywords: 'skull'
   }, {
     defaultEmoji: '👽',
-    keywords: ''
+    keywords: 'ailen'
   }, {
     defaultEmoji: '👾',
-    keywords: ''
+    keywords: 'bot'
   }, {
     defaultEmoji: '🤖',
-    keywords: 'man'
+    keywords: 'robot'
   }, {
     defaultEmoji: '🎃',
-    keywords: ''
+    keywords: 'jack o lantern'
   }]
 }, {
   id: 'Face',

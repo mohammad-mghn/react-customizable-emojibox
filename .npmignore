@@ -1,1 +1,4 @@
-node
+node_modules/
+example/
+preview/
+src/
