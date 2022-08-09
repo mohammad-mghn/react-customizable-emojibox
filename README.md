@@ -95,7 +95,7 @@ for make package responsive you have use className prop which is like regular cl
 
 #### How to change emojibox position?
 
-return className prop and use transform: transalte(X%, Y%) in your css file.
+use className prop and use transform: transalte(X%, Y%) in your css file.
 
 #### can I have new theme?
 
