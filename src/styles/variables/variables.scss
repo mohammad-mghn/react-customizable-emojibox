@@ -1,0 +1,17 @@
+$background: var(--background);
+$borderColor: var(--borderColor);
+$iconColor: var(--iconColor);
+$activeIconColor: var(--activeIconColor);
+$searchInputColor: var(--searchInputColor);
+$searchInputBC: var(--searchInputBC);
+
+@mixin flex-divied {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin center {
+  display: grid;
+  place-items: center;
+}

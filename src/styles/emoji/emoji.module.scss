@@ -1,0 +1,52 @@
+@import '../variables/variables.scss';
+
+.container {
+  @include center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  .emoji_main {
+    font-size: 1.35rem;
+  }
+  span {
+    position: absolute;
+    inset: -1px -3px auto auto;
+    transform: rotate(-315deg);
+    width: 0;
+    height: 0;
+    // for make triangle
+    border: 5px solid transparent;
+    border-top: 0;
+    border-bottom: 6px solid $searchInputColor;
+    transition: all 200ms;
+    &:hover {
+      border-bottom: 6px solid $activeIconColor;
+    }
+  }
+  div.pop_up_closer {
+    position: fixed;
+    inset: 0 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  div.pop_up_main {
+    @include flex-divied;
+    box-sizing: border-box;
+    position: fixed;
+    inset: auto auto 0.5rem 12.5%;
+    padding: 0.1rem 0.5rem;
+    width: 75%;
+    z-index: 2;
+    height: fit-content;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    background-color: $background;
+    border: 2px solid $borderColor;
+    cursor: default;
+    div {
+      cursor: pointer;
+    }
+  }
+}

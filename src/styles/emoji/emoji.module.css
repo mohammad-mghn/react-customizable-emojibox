@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.container .emoji_main {
+  font-size: 1.35rem;
+}
+.container span {
+  position: absolute;
+  inset: -1px -3px auto auto;
+  transform: rotate(-315deg);
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 0;
+  border-bottom: 6px solid var(--searchInputColor);
+  transition: all 200ms;
+}
+.container span:hover {
+  border-bottom: 6px solid var(--activeIconColor);
+}
+.container div.pop_up_closer {
+  position: fixed;
+  inset: 0 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.container div.pop_up_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+  inset: auto auto 0.5rem 12.5%;
+  padding: 0.1rem 0.5rem;
+  width: 75%;
+  z-index: 2;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  border: 2px solid var(--borderColor);
+  cursor: default;
+}
+.container div.pop_up_main div {
+  cursor: pointer;
+}/*# sourceMappingURL=emoji.module.css.map */

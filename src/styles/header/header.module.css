@@ -1,0 +1,72 @@
+.navbar_container {
+  position: relative;
+  padding: 0 1rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar_container button.button {
+  all: unset;
+  display: grid;
+  place-items: center;
+  color: var(--iconColor) !important;
+  font-size: 0.75rem;
+  transition: all 500ms;
+  cursor: pointer;
+}
+.navbar_container button.button.active {
+  color: var(--activeIconColor) !important;
+}
+.navbar_container button.button:hover {
+  color: var(--activeIconColor) !important;
+}
+.navbar_container::after {
+  content: "";
+  position: absolute;
+  inset: 102.5% 0 0 50%;
+  transform: translateX(-50%);
+  height: 0.1rem;
+  width: 90%;
+  border-radius: 1rem;
+  background-color: var(--borderColor);
+}
+
+.searchbar_container {
+  height: 2rem;
+  display: grid;
+  place-items: center;
+}
+.searchbar_container .input {
+  all: unset;
+  box-sizing: border-box;
+  padding: 0 0.5rem 0 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--searchInputBC);
+  border-radius: 5px;
+  width: 90%;
+  font-size: 0.85rem;
+  height: 1.5rem;
+  color: var(--searchInputColor);
+}
+.searchbar_container .input:valid .searchbar_container .input:invalid .searchbar_container .input:active .searchbar_container .input::-moz-placeholder {
+  border: none;
+  outline: none;
+}
+.searchbar_container .input:valid .searchbar_container .input:invalid .searchbar_container .input:active .searchbar_container .input:-ms-input-placeholder {
+  border: none;
+  outline: none;
+}
+.searchbar_container .input:focus, .searchbar_container .input:valid .searchbar_container .input:invalid .searchbar_container .input:active .searchbar_container .input::placeholder {
+  border: none;
+  outline: none;
+}
+.searchbar_container .input::-moz-placeholder {
+  color: var(--searchInputColor);
+}
+.searchbar_container .input:-ms-input-placeholder {
+  color: var(--searchInputColor);
+}
+.searchbar_container .input::placeholder {
+  color: var(--searchInputColor);
+}/*# sourceMappingURL=header.module.css.map */

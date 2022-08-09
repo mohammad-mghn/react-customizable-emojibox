@@ -1,0 +1,57 @@
+.container {
+  box-sizing: border-box;
+  position: absolute;
+  transform: translateY(-60%);
+  width: 18rem;
+  height: 22rem;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid var(--borderColor);
+  background-color: var(--background);
+}
+
+.body {
+  box-sizing: border-box;
+  margin: 0 2.5% 0 5%;
+  padding: 0.5rem 2.5% 6rem 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+.body::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+.body::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: var(--borderColor);
+}
+
+.section {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.section::after {
+  content: "";
+  position: absolute;
+  inset: 1.25rem 0 0 0;
+  width: 100%;
+  height: 0.1rem;
+  border-radius: 1rem;
+  background-color: var(--borderColor);
+}
+.section p {
+  all: unset;
+  font-size: 1rem;
+  color: var(--activeIconColor);
+}
+.section .emojis {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(14%, 1fr));
+  row-gap: 0.5rem;
+  overflow: visible;
+}/*# sourceMappingURL=main.module.css.map */
