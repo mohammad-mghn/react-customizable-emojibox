@@ -8,27 +8,36 @@ import SportsBasketballRoundedIcon from '@mui/icons-material/SportsBasketballRou
 import SentimentSatisfiedAltRoundedIcon from '@mui/icons-material/SentimentSatisfiedAltRounded';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-var styles = {"container":"_emoji-module__container__3uB1j","emoji_main":"_emoji-module__emoji_main__SO2d4","pop_up_closer":"_emoji-module__pop_up_closer__2vib_","pop_up_main":"_emoji-module__pop_up_main__3WdON"};
+var styles = {"container":"_3uB1j","emoji_main":"_SO2d4","pop_up_closer":"_2vib_","pop_up_main":"_3WdON"};
 
-const Emoji = props => {
-  const {
-    defaultEmoji,
-    allArray,
-    EmojiClickHandler,
-    recentlyHandler
-  } = props;
-  const [moreEmoji, setMoreEmoji] = useState(false);
+var Emoji = function Emoji(props) {
+  var defaultEmoji = props.defaultEmoji,
+      allArray = props.allArray,
+      EmojiClickHandler = props.EmojiClickHandler,
+      recentlyHandler = props.recentlyHandler;
 
-  const moreEmojiHandler = () => {
-    setMoreEmoji(prevValue => !prevValue);
+  var _useState = useState(false),
+      moreEmoji = _useState[0],
+      setMoreEmoji = _useState[1];
+
+  var moreEmojiHandler = function moreEmojiHandler() {
+    setMoreEmoji(function (prevValue) {
+      return !prevValue;
+    });
   };
 
-  const EmojiClickedHandler = (e, char = defaultEmoji) => {
-    recentlyHandler(char);
-    EmojiClickHandler(char);
+  var EmojiClickedHandler = function EmojiClickedHandler(e, _char) {
+    if (_char === void 0) {
+      _char = defaultEmoji;
+    }
+
+    recentlyHandler(_char);
+    EmojiClickHandler(_char);
 
     if (moreEmoji) {
-      setMoreEmoji(prevValue => !prevValue);
+      setMoreEmoji(function (prevValue) {
+        return !prevValue;
+      });
     }
   };
 
@@ -45,23 +54,28 @@ const Emoji = props => {
     onClick: moreEmojiHandler
   }), /*#__PURE__*/React.createElement("div", {
     className: styles.pop_up_main
-  }, allArray.map(item => /*#__PURE__*/React.createElement("div", {
-    key: item,
-    onClick: e => {
-      EmojiClickedHandler(e, item);
-    }
-  }, item))))));
+  }, allArray.map(function (item) {
+    return /*#__PURE__*/React.createElement("div", {
+      key: item,
+      onClick: function onClick(e) {
+        EmojiClickedHandler(e, item);
+      }
+    }, item);
+  })))));
 };
 
-var styles$1 = {"navbar_container":"_header-module__navbar_container__OazCJ","button":"_header-module__button__8JIRF","active":"_header-module__active__2kd8q","searchbar_container":"_header-module__searchbar_container__1ooIA","input":"_header-module__input__2j0Sq"};
+var styles$1 = {"navbar_container":"_OazCJ","button":"_8JIRF","active":"_2kd8q","searchbar_container":"_1ooIA","input":"_2j0Sq"};
 
-const HeaderButton = ({
-  icon,
-  id,
-  scrollToStickerSection
-}) => {
-  const [isActive, setIsActive] = React.useState(id === 'Emoji');
-  React.useEffect(() => {
+var HeaderButton = function HeaderButton(_ref) {
+  var icon = _ref.icon,
+      id = _ref.id,
+      scrollToStickerSection = _ref.scrollToStickerSection;
+
+  var _React$useState = React.useState(id === 'Emoji'),
+      isActive = _React$useState[0],
+      setIsActive = _React$useState[1];
+
+  React.useEffect(function () {
     document.getElementById('emojibox-sections-container').addEventListener('scroll', function () {
       if (document.getElementById(id)) {
         var element = document.getElementById(id);
@@ -76,17 +90,17 @@ const HeaderButton = ({
     });
   }, []);
   return /*#__PURE__*/React.createElement("button", {
-    className: `${styles$1.button} ${isActive && styles$1.active}`,
-    onClick: () => {
+    className: styles$1.button + " " + (isActive && styles$1.active),
+    onClick: function onClick() {
       scrollToStickerSection(id);
     }
   }, /*#__PURE__*/React.createElement(icon.icon, null));
 };
 
-const Header = ({
-  filterHandler
-}) => {
-  const scrollToStickerSection = id => {
+var Header = function Header(_ref) {
+  var filterHandler = _ref.filterHandler;
+
+  var scrollToStickerSection = function scrollToStickerSection(id) {
     if (document.getElementById(id)) {
       document.getElementById('emojibox-sections-container').scroll({
         top: document.getElementById(id).offsetTop - 74.25,
@@ -95,7 +109,7 @@ const Header = ({
     }
   };
 
-  const headers = [{
+  var headers = [{
     id: 'Emoji',
     icon: SentimentSatisfiedAltRoundedIcon
   }, {
@@ -119,24 +133,26 @@ const Header = ({
   }];
   return /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: styles$1.navbar_container
-  }, headers.map(item => /*#__PURE__*/React.createElement(HeaderButton, {
-    icon: item,
-    id: item.id,
-    key: item.id,
-    scrollToStickerSection: scrollToStickerSection
-  }))), /*#__PURE__*/React.createElement("div", {
+  }, headers.map(function (item) {
+    return /*#__PURE__*/React.createElement(HeaderButton, {
+      icon: item,
+      id: item.id,
+      key: item.id,
+      scrollToStickerSection: scrollToStickerSection
+    });
+  })), /*#__PURE__*/React.createElement("div", {
     className: styles$1.searchbar_container
   }, /*#__PURE__*/React.createElement("input", {
     type: "text",
     className: styles$1.input,
     placeholder: "Search for emoji",
-    onChange: e => {
+    onChange: function onChange(e) {
       filterHandler(e.target.value);
     }
   })));
 };
 
-const sections = [{
+var sections = [{
   id: 'Emoji',
   emojis: [{
     defaultEmoji: '😄',
@@ -1457,16 +1473,15 @@ const sections = [{
   }]
 }];
 
-var styles$2 = {"container":"_main-module__container__2p_SA","body":"_main-module__body__31fTd","section":"_main-module__section__2nfvj","emojis":"_main-module__emojis__2Ipt5"};
+var styles$2 = {"container":"_2p_SA","body":"_31fTd","section":"_2nfvj","emojis":"_2Ipt5"};
 
-const Main = ({
-  setVisibility,
-  visibility,
-  EmojiClickedHandler,
-  style,
-  className
-}) => {
-  React.useEffect(() => {
+var Main = function Main(_ref) {
+  var setVisibility = _ref.setVisibility,
+      visibility = _ref.visibility,
+      EmojiClickedHandler = _ref.EmojiClickedHandler,
+      style = _ref.style,
+      className = _ref.className;
+  React.useEffect(function () {
     var ignoreClickOnMeElement = document.getElementById('react-customizable-emojibox');
     document.addEventListener('click', function (event) {
       var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
@@ -1477,23 +1492,35 @@ const Main = ({
       }
     });
   });
-  const [recently, setRecently] = useState(window ? window.localStorage.getItem('RECAT-CUSTOMIZABLE-EMOJIBOX-RECENTLY') ? JSON.parse(window.localStorage.getItem('RECAT-CUSTOMIZABLE-EMOJIBOX-RECENTLY')) : [] : []);
-  const [filteredEmojis, setFilteredEmojis] = useState(sections);
 
-  const filterHandler = searchedText => {
-    const sectionsCopy = JSON.parse(JSON.stringify(sections));
-    sectionsCopy.forEach(item => {
-      item.emojis = item.emojis.filter(item => item.keywords.includes(searchedText));
+  var _useState = useState(window ? window.localStorage.getItem('RECAT-CUSTOMIZABLE-EMOJIBOX-RECENTLY') ? JSON.parse(window.localStorage.getItem('RECAT-CUSTOMIZABLE-EMOJIBOX-RECENTLY')) : [] : []),
+      recently = _useState[0],
+      setRecently = _useState[1];
+
+  var _useState2 = useState(sections),
+      filteredEmojis = _useState2[0],
+      setFilteredEmojis = _useState2[1];
+
+  var filterHandler = function filterHandler(searchedText) {
+    var sectionsCopy = JSON.parse(JSON.stringify(sections));
+    sectionsCopy.forEach(function (item) {
+      item.emojis = item.emojis.filter(function (item) {
+        return item.keywords.includes(searchedText);
+      });
     });
     setFilteredEmojis(JSON.parse(JSON.stringify(sectionsCopy)));
   };
 
-  const recentlyHandler = emoji => {
-    const recentlyCopy = recently;
-    const isEmojiExisted = recently.find(item => item.defaultEmoji === emoji);
+  var recentlyHandler = function recentlyHandler(emoji) {
+    var recentlyCopy = recently;
+    var isEmojiExisted = recently.find(function (item) {
+      return item.defaultEmoji === emoji;
+    });
 
     if (isEmojiExisted) {
-      recentlyCopy.splice(recentlyCopy.findIndex(item => item.defaultEmoji === emoji), 1);
+      recentlyCopy.splice(recentlyCopy.findIndex(function (item) {
+        return item.defaultEmoji === emoji;
+      }), 1);
     }
 
     recentlyCopy.unshift({
@@ -1509,7 +1536,7 @@ const Main = ({
   };
 
   return /*#__PURE__*/React.createElement("div", {
-    className: `${styles$2.container} ${className && className}`,
+    className: styles$2.container + " " + (className && className),
     style: style && style,
     id: "react-customizable-emojibox"
   }, /*#__PURE__*/React.createElement(Header, {
@@ -1522,53 +1549,64 @@ const Main = ({
     className: styles$2.section
   }, /*#__PURE__*/React.createElement("p", null, "Recently"), /*#__PURE__*/React.createElement("div", {
     className: styles$2.emojis
-  }, recently.map(item => /*#__PURE__*/React.createElement(Emoji, {
-    key: item.defaultEmoji,
-    allArray: item.allArray,
-    defaultEmoji: item.defaultEmoji,
-    EmojiClickHandler: EmojiClickedHandler,
-    recentlyHandler: recentlyHandler
-  })))), filteredEmojis.map(item => item.emojis.length !== 0 && /*#__PURE__*/React.createElement("div", {
-    id: item.id,
-    className: styles$2.section,
-    key: item.id
-  }, /*#__PURE__*/React.createElement("p", null, item.id), /*#__PURE__*/React.createElement("div", {
-    className: styles$2.emojis
-  }, item.emojis.map(item => /*#__PURE__*/React.createElement(Emoji, {
-    key: item.defaultEmoji,
-    allArray: item.allArray,
-    defaultEmoji: item.defaultEmoji,
-    EmojiClickHandler: EmojiClickedHandler,
-    recentlyHandler: recentlyHandler
-  })))))));
+  }, recently.map(function (item) {
+    return /*#__PURE__*/React.createElement(Emoji, {
+      key: item.defaultEmoji,
+      allArray: item.allArray,
+      defaultEmoji: item.defaultEmoji,
+      EmojiClickHandler: EmojiClickedHandler,
+      recentlyHandler: recentlyHandler
+    });
+  }))), filteredEmojis.map(function (item) {
+    return item.emojis.length !== 0 && /*#__PURE__*/React.createElement("div", {
+      id: item.id,
+      className: styles$2.section,
+      key: item.id
+    }, /*#__PURE__*/React.createElement("p", null, item.id), /*#__PURE__*/React.createElement("div", {
+      className: styles$2.emojis
+    }, item.emojis.map(function (item) {
+      return /*#__PURE__*/React.createElement(Emoji, {
+        key: item.defaultEmoji,
+        allArray: item.allArray,
+        defaultEmoji: item.defaultEmoji,
+        EmojiClickHandler: EmojiClickedHandler,
+        recentlyHandler: recentlyHandler
+      });
+    })));
+  })));
 };
 
-let _ = t => t,
-    _t;
-const GlobalStyles = createGlobalStyle(_t || (_t = _`
-    :root{
-        --background:${0};
-        --borderColor:${0};
-        --iconColor:${0};
-        --activeIconColor:${0};
-        --searchInputBC:${0};
-        --searchInputColor:${0};
-    }
-`), ({
-  theme
-}) => theme.background, ({
-  theme
-}) => theme.borderColor, ({
-  theme
-}) => theme.iconColor, ({
-  theme
-}) => theme.activeIconColor, ({
-  theme
-}) => theme.searchInputBC, ({
-  theme
-}) => theme.searchInputColor);
+function _taggedTemplateLiteralLoose(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
 
-const GlassTheme = {
+  strings.raw = raw;
+  return strings;
+}
+
+var _templateObject;
+var GlobalStyles = createGlobalStyle(_templateObject || (_templateObject = _taggedTemplateLiteralLoose(["\n    :root{\n        --background:", ";\n        --borderColor:", ";\n        --iconColor:", ";\n        --activeIconColor:", ";\n        --searchInputBC:", ";\n        --searchInputColor:", ";\n    }\n"])), function (_ref) {
+  var theme = _ref.theme;
+  return theme.background;
+}, function (_ref2) {
+  var theme = _ref2.theme;
+  return theme.borderColor;
+}, function (_ref3) {
+  var theme = _ref3.theme;
+  return theme.iconColor;
+}, function (_ref4) {
+  var theme = _ref4.theme;
+  return theme.activeIconColor;
+}, function (_ref5) {
+  var theme = _ref5.theme;
+  return theme.searchInputBC;
+}, function (_ref6) {
+  var theme = _ref6.theme;
+  return theme.searchInputColor;
+});
+
+var GlassTheme = {
   background: 'rgba(155, 153, 153, 0.099)',
   borderColor: '#8a8a8a70',
   iconColor: '#8a8a8a70',
@@ -1576,7 +1614,7 @@ const GlassTheme = {
   searchInputBC: '#93949440',
   searchInputColor: '#c9c9c98e'
 };
-const LightTheme = {
+var LightTheme = {
   background: '#fff',
   borderColor: '#a9a9a970',
   iconColor: '#949494',
@@ -1584,7 +1622,7 @@ const LightTheme = {
   searchInputBC: '#e0e0e0',
   searchInputColor: '#00000080'
 };
-const DarkTheme = {
+var DarkTheme = {
   background: '#141414',
   borderColor: '#8a8a8a70',
   iconColor: '#8a8a8a70',
@@ -1592,7 +1630,7 @@ const DarkTheme = {
   searchInputBC: '#93949440',
   searchInputColor: '#A1A1A1'
 };
-const MaterialTheme = {
+var MaterialTheme = {
   background: '#020039',
   borderColor: '#8a8a8a70',
   iconColor: '#8a8a8a70',
@@ -1601,15 +1639,13 @@ const MaterialTheme = {
   searchInputColor: '#c9c9c98e'
 };
 
-const EmojiBox = props => {
-  const {
-    visibility,
-    setVisibility,
-    theme,
-    EmojiClickedHandler,
-    style,
-    className
-  } = props;
+var EmojiBox = function EmojiBox(props) {
+  var visibility = props.visibility,
+      setVisibility = props.setVisibility,
+      theme = props.theme,
+      EmojiClickedHandler = props.EmojiClickedHandler,
+      style = props.style,
+      className = props.className;
   return /*#__PURE__*/React.createElement(Fragment, null, visibility && /*#__PURE__*/React.createElement(ThemeProvider, {
     theme: theme ? theme : GlassTheme
   }, /*#__PURE__*/React.createElement(GlobalStyles, null), /*#__PURE__*/React.createElement(Main, {

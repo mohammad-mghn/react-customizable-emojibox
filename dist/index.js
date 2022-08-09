@@ -11,7 +11,7 @@ var SportsBasketballRoundedIcon = _interopDefault(require('@mui/icons-material/S
 var SentimentSatisfiedAltRoundedIcon = _interopDefault(require('@mui/icons-material/SentimentSatisfiedAltRounded'));
 var styledComponents = require('styled-components');
 
-var styles = {"container":"_emoji-module__container__3uB1j","emoji_main":"_emoji-module__emoji_main__SO2d4","pop_up_closer":"_emoji-module__pop_up_closer__2vib_","pop_up_main":"_emoji-module__pop_up_main__3WdON"};
+var styles = {"container":"_3uB1j","emoji_main":"_SO2d4","pop_up_closer":"_2vib_","pop_up_main":"_3WdON"};
 
 var Emoji = function Emoji(props) {
   var defaultEmoji = props.defaultEmoji,
@@ -67,7 +67,7 @@ var Emoji = function Emoji(props) {
   })))));
 };
 
-var styles$1 = {"navbar_container":"_header-module__navbar_container__OazCJ","button":"_header-module__button__8JIRF","active":"_header-module__active__2kd8q","searchbar_container":"_header-module__searchbar_container__1ooIA","input":"_header-module__input__2j0Sq"};
+var styles$1 = {"navbar_container":"_OazCJ","button":"_8JIRF","active":"_2kd8q","searchbar_container":"_1ooIA","input":"_2j0Sq"};
 
 var HeaderButton = function HeaderButton(_ref) {
   var icon = _ref.icon,
@@ -1476,7 +1476,7 @@ var sections = [{
   }]
 }];
 
-var styles$2 = {"container":"_main-module__container__2p_SA","body":"_main-module__body__31fTd","section":"_main-module__section__2nfvj","emojis":"_main-module__emojis__2Ipt5"};
+var styles$2 = {"container":"_2p_SA","body":"_31fTd","section":"_2nfvj","emojis":"_2Ipt5"};
 
 var Main = function Main(_ref) {
   var setVisibility = _ref.setVisibility,
